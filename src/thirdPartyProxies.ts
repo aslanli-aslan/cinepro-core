@@ -60,6 +60,7 @@ export const knownThirdPartyProxies: Record<string, RegExp[]> = {
     // These are checked AFTER origin-specific patterns
 
     '*': [
+        /^https:\/\/[^/]+\.workers\.dev\/((?:https?:\/\/|https?%3A%2F%2F).+)$/, // another workers.dev/https[url encoded] capturer
         /^https:\/\/[^/]+\.workers\.dev\/((?:https?:\/\/)?[^/]+\/file2\/.+)$/, // any workers.dev/[domain]/file2/[content] capturer
         /^https:\/\/.+?\.workers\.dev\/((?:https?:\/\/).+)$/, // any [subdomain].workers.dev/[https://..... link] capturer
         /\/proxy\/(.+)$/, // Generic /proxy/encoded

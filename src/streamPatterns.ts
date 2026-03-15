@@ -3,5 +3,6 @@
 
 export const streamPatterns: RegExp[] = [
     /pixeldrain|pixeldra\.in/,
-    /hub.raj.lat/
+    /hub.raj.lat/,
+    /hub.oreao-cdn.buzz/
 ];
